@@ -1,0 +1,109 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  user-select: none;
+  background: #f3ec82;
+}
+
+h2 {
+  font-size: 30px;
+  margin-left: 0.2em;
+  text-align: center;
+}
+
+.container {
+  margin-left: 1.8em;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #5700bb;
+  box-shadow: 13px 13px 23px #333232, -13px -13px 23px #3f3f3f;
+}
+
+.content {
+  width: 100%;
+  margin-top: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row button {
+  width: 60px;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  border-radius: 4px;
+  transition: 0.1s;
+  box-shadow: 5px 5px 8px #00000020, -5px -5px 8px rgb(63, 4, 158);
+}
+
+.row button:hover {
+  box-shadow: inset 5px 5px 8px rgba(16, 16, 16, 0.1), inset -5px -5px 8px rgb(214, 214, 214);
+  background: rgb(213, 218, 245);
+}
+
+.display #screen {
+  margin-bottom: 0.5em;
+  width: 100%;
+  height: 70px;
+  font-size: 35px;
+  outline: none;
+  border: none;
+  text-align: right;
+  background: #ecf0f3;
+  border-radius: 6px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+#eval {
+  background: #7eff33;
+  color: #fff;
+  box-shadow: inset 5px 5px 8px #66ff7f, inset -5px -5px 8px #54e600;
+}
+
+#eval:hover {
+  box-shadow: inset 5px 5px 8px #06a501, inset -5px -5px 8px #35a501;
+}
+
+#bs {
+  background: #33adcc;
+  color: #fff;
+}
+
+#bs:hover {
+  box-shadow: inset 5px 5px 8px #06768a, inset -5px -5px 8px #086e75;
+}
+
+#ce {
+  background: #ff3399;
+  color: #fff;
+}
+
+#ce:hover {
+  box-shadow: inset 5px 5px 8px #a70455, inset -5px -5px 8px #af065b;
+}
+
+#redbtn {
+  background: #ff3333;
+  color: #fff;
+}
+
+#redbtn:hover {
+  box-shadow: inset 5px 5px 8px #a30303, inset -5px -5px 8px #b30606;
+}
+
+#orangebtn {
+  background: #faa912;
+  color: #fff;
+}
+
+#orangebtn:hover {
+  box-shadow: inset 5px 5px 8px #a35003, inset -5px -5px 8px #8f5304;
+}

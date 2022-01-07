@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Scientific calculator</title>
+
+</head>
+<body>
+    <div class="container">
+        <h2>SCIENTIFIC CALCULATOR</h2>
+        <div class="display">
+            <input id="screen" type="text" placeholder="00">
+        </div>
+
+        <div class="btns">
+            <div class="row">
+                <button id ="ce" onclick="screen.value=''">C</button>
+                <button id="bs" onclick="backspc()">back</button>
+                <button id="redbtn" onclick="sqrt()">√</button>
+                <button id="redbtn" class="btn">(</button>
+                <button id="redbtn" class="btn">)</button>
+                <button id="redbtn" class="btn">%</button>
+                <button id="redbtn" class="btn">÷</button>
+            </div>
+
+            <div class="row">
+                <button id="orangebtn" onclick="sin()">sin</button>
+                <button id="orangebtn" onclick="cos()">cos</button>
+                <button id="orangebtn" onclick="tan()">tan</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button id="redbtn" class="btn">×</button>
+            </div>
+
+            <div class="row">
+                <button id="orangebtn" onclick="ln()">ln</button>
+                <button id="orangebtn" onclick="log()">log</button>
+                <button id="orangebtn" class="btn">1/x</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button id="redbtn" class="btn">-</button>
+            </div>
+
+            <div class="row">
+                <button id="orangebtn" onclick="epow()">e <span style="position: relative; bottom: .4em; right: .1em;">x</span></button>
+                <button id="orangebtn" onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">2</span></button>
+                <button id="orangebtn" onclick="pow3()">x <span style="position: relative; bottom: .4em; right: .1em;">3</span></button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button id="redbtn" class="btn">+</button>
+            </div>
+
+            <div class="row">
+                <button id="orangebtn" onclick="fact()">x!</button>
+                <button id="orangebtn" onclick="pi()">π</button>
+                <button id="orangebtn" onclick="e()">e</button>
+                <button onclick="neg()">(-)</button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <h2>soft <span>SCIENTIFIC</span><br>CALCI <br> <i style="font-size: 100px;" class="fa fa-reply"></i></h2> -->
+    <!-- <link rel="text/javascript" href="index.js"> -->
+    <script src="index.js"></script>
+</body>
+</html>
